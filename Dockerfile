@@ -3,8 +3,8 @@ FROM php:8.2-apache
 # Enable Apache mod_rewrite for URL routing
 RUN a2enmod rewrite
 
-# Install required PHP extensions (e.g., PDO and MySQL)
-RUN docker-php-ext-install pdo pdo_mysql
+# Install required PHP extensions (e.g., mysqli, PDO, and MySQL)
+RUN docker-php-ext-install mysqli pdo pdo_mysql docker-php-ext-enable mysqli
 
 # Update the default Apache site to use the /public directory as the document root
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
