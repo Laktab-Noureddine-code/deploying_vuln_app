@@ -4,10 +4,10 @@
 // FOR EDUCATIONAL USE ONLY
 // =============================================
 
-$db_host = 'localhost';
-$db_user = 'root';
-$db_pass = '';
-$db_name = 'zap_demo';
+$db_host = getenv('DB_HOST') ?: 'db';
+$db_user = getenv('DB_USER') ?: 'root';
+$db_pass = getenv('DB_PASS') !== false ? getenv('DB_PASS') : 'rootpassword';
+$db_name = getenv('DB_NAME') ?: 'zap_demo';
 
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 

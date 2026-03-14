@@ -15,7 +15,7 @@ services:
       - DB_HOST=db
       - DB_USER=root
       - DB_PASS=rootpassword
-      - DB_NAME=php_app_db
+      - DB_NAME=zap_demo
     restart: unless-stopped
 
   db:
@@ -23,7 +23,7 @@ services:
     container_name: php_app_db
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: php_app_db
+      MYSQL_DATABASE: zap_demo
     ports:
       - "3306:3306"
     volumes:

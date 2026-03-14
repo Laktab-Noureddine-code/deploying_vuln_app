@@ -32,6 +32,8 @@ jobs:
     name: Security Testing (OWASP ZAP)
     needs: deploy
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
