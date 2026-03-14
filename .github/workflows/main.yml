@@ -19,7 +19,7 @@ jobs:
           # Assuming you have a docker-compose.yml on the server setup
           script: |
             # Navigate to the application directory on your server
-            cd /var/www/my-php-app
+            cd ~/my-php-app
             
             # Pull the latest code 
             git pull origin main
