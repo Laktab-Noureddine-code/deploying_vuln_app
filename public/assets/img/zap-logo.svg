@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- OWASP ZAP Logo - Lightning bolt in shield -->
+  <defs>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0099FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0055AA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Shield outline -->
+  <path d="M128 16L32 56v72c0 53.02 40.94 102.58 96 120 55.06-17.42 96-66.98 96-120V56L128 16z" fill="url(#shield)" opacity="0.15" stroke="#00549E" stroke-width="6"/>
+  <!-- Inner shield -->
+  <path d="M128 32L48 66v60c0 46.55 34.2 89.88 80 106 45.8-16.12 80-59.45 80-106V66L128 32z" fill="url(#shield)" opacity="0.25"/>
+  <!-- ZAP Lightning Bolt -->
+  <path d="M148 52L92 136h36L108 204l68-96h-40L148 52z" fill="#00549E" stroke="#003d73" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Lightning bolt highlight -->
+  <path d="M148 52L92 136h36L108 204l68-96h-40L148 52z" fill="url(#shield)" opacity="0.4"/>
+</svg>

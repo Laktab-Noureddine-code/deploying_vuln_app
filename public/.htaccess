@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Allow access to existing files and directories (assets, images, etc.)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Route everything else to the front controller
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
