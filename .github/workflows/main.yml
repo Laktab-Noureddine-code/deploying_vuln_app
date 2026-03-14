@@ -47,4 +47,4 @@ jobs:
           target: 'http://${{ secrets.SERVER_HOST }}'
           issue_title: 'ZAP Security Alert'
           fail_action: false
-          artifact_name: 'zap_scan_report'
+          artifact_name: 'zap-scan-report'
