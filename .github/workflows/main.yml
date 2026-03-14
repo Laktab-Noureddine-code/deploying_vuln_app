@@ -34,8 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-      contents: write
-      actions: read
+      contents: read
+      actions: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -50,4 +50,6 @@ jobs:
           target: 'http://${{ secrets.SERVER_HOST }}'
           issue_title: 'ZAP Security Alert'
           fail_action: false
-          artifact_name: 'zap-scan-report'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifact_name: 'zap-scan'
+          allow_issue_writing: true
