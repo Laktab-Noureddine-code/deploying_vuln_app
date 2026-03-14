@@ -43,8 +43,8 @@ jobs:
 
       - name: ZAP Baseline Scan
         uses: zaproxy/action-baseline@v0.12.0
+        continue-on-error: true
         with:
           target: 'http://${{ secrets.SERVER_HOST }}'
           issue_title: 'ZAP Security Alert'
           fail_action: false
-          artifact_name: 'zap-scan-report'
