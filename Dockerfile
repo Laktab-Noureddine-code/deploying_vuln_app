@@ -4,10 +4,10 @@ FROM php:8.2-apache
 RUN a2enmod rewrite
 
 # Install required PHP extensions (e.g., mysqli, PDO, and MySQL)
-RUN docker-php-ext-install mysqli pdo pdo_mysql docker-php-ext-enable mysqli
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Update the default Apache site to use the /public directory as the document root
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+ENV APACHE_DOCUMENT_ROOT="/var/www/html/public"
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
