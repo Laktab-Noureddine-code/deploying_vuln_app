@@ -16,7 +16,7 @@ require_once __DIR__ . '/../layouts/header.php';
             <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-surface-700 border border-white/8 mb-5 shadow-lg">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/OWASP_ZAP_logo.svg" alt="OWASP ZAP" class="w-14 h-14">
             </div>
-            <h1 class="text-2xl font-bold text-white tracking-tight">Testing OWASP ZAP</h1>
+            <h1 class="text-2xl font-bold text-white tracking-tight">Testing OWASP ZAP With Mr Zouani</h1>
             <p class="text-slate-500 mt-1.5 text-sm">Sign in to the vulnerability testing lab</p>
         </div>
 
